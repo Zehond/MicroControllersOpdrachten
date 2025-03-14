@@ -1,0 +1,338 @@
+
+OpdrachtB1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000020e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001ba  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000020e  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000240  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000070  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000d0c  00000000  00000000  000002ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008c5  00000000  00000000  00000ff8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000004e4  00000000  00000000  000018bd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000d8  00000000  00000000  00001da4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000004a7  00000000  00000000  00001e7c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000016f  00000000  00000000  00002323  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000060  00000000  00000000  00002492  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	62 d0       	rcall	.+196    	; 0x15e <main>
+  9a:	8d c0       	rjmp	.+282    	; 0x1b6 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <wait>:
+void displayOff() 
+{
+  	spi_slaveSelect(0);				// Select display chip
+  	spi_write(0x0C); 				// Register 0B: Shutdown register
+  	spi_write(0x00); 				// 	-> 1 = Normal operation
+  	spi_slaveDeSelect(0);			// Deselect display chip
+  9e:	20 e0       	ldi	r18, 0x00	; 0
+  a0:	30 e0       	ldi	r19, 0x00	; 0
+  a2:	08 c0       	rjmp	.+16     	; 0xb4 <wait+0x16>
+  a4:	e3 ec       	ldi	r30, 0xC3	; 195
+  a6:	f9 e0       	ldi	r31, 0x09	; 9
+  a8:	31 97       	sbiw	r30, 0x01	; 1
+  aa:	f1 f7       	brne	.-4      	; 0xa8 <wait+0xa>
+  ac:	00 c0       	rjmp	.+0      	; 0xae <wait+0x10>
+  ae:	00 00       	nop
+  b0:	2f 5f       	subi	r18, 0xFF	; 255
+  b2:	3f 4f       	sbci	r19, 0xFF	; 255
+  b4:	28 17       	cp	r18, r24
+  b6:	39 07       	cpc	r19, r25
+  b8:	ac f3       	brlt	.-22     	; 0xa4 <wait+0x6>
+  ba:	08 95       	ret
+
+000000bc <spi_masterInit>:
+  bc:	8f ef       	ldi	r24, 0xFF	; 255
+  be:	87 bb       	out	0x17, r24	; 23
+  c0:	87 b3       	in	r24, 0x17	; 23
+  c2:	87 7f       	andi	r24, 0xF7	; 247
+  c4:	87 bb       	out	0x17, r24	; 23
+  c6:	88 b3       	in	r24, 0x18	; 24
+  c8:	81 60       	ori	r24, 0x01	; 1
+  ca:	88 bb       	out	0x18, r24	; 24
+  cc:	82 e5       	ldi	r24, 0x52	; 82
+  ce:	8d b9       	out	0x0d, r24	; 13
+  d0:	08 95       	ret
+
+000000d2 <spi_write>:
+  d2:	8f b9       	out	0x0f, r24	; 15
+  d4:	77 9b       	sbis	0x0e, 7	; 14
+  d6:	fe cf       	rjmp	.-4      	; 0xd4 <spi_write+0x2>
+  d8:	08 95       	ret
+
+000000da <spi_slaveSelect>:
+  da:	98 b3       	in	r25, 0x18	; 24
+  dc:	21 e0       	ldi	r18, 0x01	; 1
+  de:	30 e0       	ldi	r19, 0x00	; 0
+  e0:	02 c0       	rjmp	.+4      	; 0xe6 <spi_slaveSelect+0xc>
+  e2:	22 0f       	add	r18, r18
+  e4:	33 1f       	adc	r19, r19
+  e6:	8a 95       	dec	r24
+  e8:	e2 f7       	brpl	.-8      	; 0xe2 <spi_slaveSelect+0x8>
+  ea:	20 95       	com	r18
+  ec:	29 23       	and	r18, r25
+  ee:	28 bb       	out	0x18, r18	; 24
+  f0:	08 95       	ret
+
+000000f2 <spi_slaveDeSelect>:
+  f2:	98 b3       	in	r25, 0x18	; 24
+  f4:	21 e0       	ldi	r18, 0x01	; 1
+  f6:	30 e0       	ldi	r19, 0x00	; 0
+  f8:	02 c0       	rjmp	.+4      	; 0xfe <spi_slaveDeSelect+0xc>
+  fa:	22 0f       	add	r18, r18
+  fc:	33 1f       	adc	r19, r19
+  fe:	8a 95       	dec	r24
+ 100:	e2 f7       	brpl	.-8      	; 0xfa <spi_slaveDeSelect+0x8>
+ 102:	29 2b       	or	r18, r25
+ 104:	28 bb       	out	0x18, r18	; 24
+ 106:	08 95       	ret
+
+00000108 <spi_writeWord>:
+ 108:	cf 93       	push	r28
+ 10a:	df 93       	push	r29
+ 10c:	d8 2f       	mov	r29, r24
+ 10e:	c6 2f       	mov	r28, r22
+ 110:	80 e0       	ldi	r24, 0x00	; 0
+ 112:	e3 df       	rcall	.-58     	; 0xda <spi_slaveSelect>
+ 114:	8d 2f       	mov	r24, r29
+ 116:	dd df       	rcall	.-70     	; 0xd2 <spi_write>
+ 118:	8c 2f       	mov	r24, r28
+ 11a:	db df       	rcall	.-74     	; 0xd2 <spi_write>
+ 11c:	80 e0       	ldi	r24, 0x00	; 0
+ 11e:	e9 df       	rcall	.-46     	; 0xf2 <spi_slaveDeSelect>
+ 120:	df 91       	pop	r29
+ 122:	cf 91       	pop	r28
+ 124:	08 95       	ret
+
+00000126 <displayDriverInit>:
+ 126:	80 e0       	ldi	r24, 0x00	; 0
+ 128:	d8 df       	rcall	.-80     	; 0xda <spi_slaveSelect>
+ 12a:	89 e0       	ldi	r24, 0x09	; 9
+ 12c:	d2 df       	rcall	.-92     	; 0xd2 <spi_write>
+ 12e:	8f ef       	ldi	r24, 0xFF	; 255
+ 130:	d0 df       	rcall	.-96     	; 0xd2 <spi_write>
+ 132:	80 e0       	ldi	r24, 0x00	; 0
+ 134:	de df       	rcall	.-68     	; 0xf2 <spi_slaveDeSelect>
+ 136:	6f e0       	ldi	r22, 0x0F	; 15
+ 138:	8a e0       	ldi	r24, 0x0A	; 10
+ 13a:	e6 df       	rcall	.-52     	; 0x108 <spi_writeWord>
+ 13c:	80 e0       	ldi	r24, 0x00	; 0
+ 13e:	cd df       	rcall	.-102    	; 0xda <spi_slaveSelect>
+ 140:	8b e0       	ldi	r24, 0x0B	; 11
+ 142:	c7 df       	rcall	.-114    	; 0xd2 <spi_write>
+ 144:	83 e0       	ldi	r24, 0x03	; 3
+ 146:	c5 df       	rcall	.-118    	; 0xd2 <spi_write>
+ 148:	80 e0       	ldi	r24, 0x00	; 0
+ 14a:	d3 df       	rcall	.-90     	; 0xf2 <spi_slaveDeSelect>
+ 14c:	80 e0       	ldi	r24, 0x00	; 0
+ 14e:	c5 df       	rcall	.-118    	; 0xda <spi_slaveSelect>
+ 150:	8c e0       	ldi	r24, 0x0C	; 12
+ 152:	bf df       	rcall	.-130    	; 0xd2 <spi_write>
+ 154:	81 e0       	ldi	r24, 0x01	; 1
+ 156:	bd df       	rcall	.-134    	; 0xd2 <spi_write>
+ 158:	80 e0       	ldi	r24, 0x00	; 0
+ 15a:	cb cf       	rjmp	.-106    	; 0xf2 <spi_slaveDeSelect>
+ 15c:	08 95       	ret
+
+0000015e <main>:
+}
+
+int main()
+{
+ 15e:	cf 93       	push	r28
+	// inilialize
+	DDRB=0x01;					  	// Set PB0 pin as output for display select
+ 160:	81 e0       	ldi	r24, 0x01	; 1
+ 162:	87 bb       	out	0x17, r24	; 23
+	spi_masterInit();              	// Initialize spi module
+ 164:	ab df       	rcall	.-170    	; 0xbc <spi_masterInit>
+	displayDriverInit();            // Initialize display chip
+ 166:	df df       	rcall	.-66     	; 0x126 <displayDriverInit>
+ 168:	c1 e0       	ldi	r28, 0x01	; 1
+
+ 	// clear display (all zero's)
+	for (char i =1; i<=4; i++)
+ 16a:	09 c0       	rjmp	.+18     	; 0x17e <main+0x20>
+	{
+      	spi_slaveSelect(0); 		// Select display chip
+ 16c:	80 e0       	ldi	r24, 0x00	; 0
+ 16e:	b5 df       	rcall	.-150    	; 0xda <spi_slaveSelect>
+      	spi_write(i);  				// 	digit adress: (digit place)
+ 170:	8c 2f       	mov	r24, r28
+ 172:	af df       	rcall	.-162    	; 0xd2 <spi_write>
+      	spi_write(0);				// 	digit value: 0 
+ 174:	80 e0       	ldi	r24, 0x00	; 0
+ 176:	ad df       	rcall	.-166    	; 0xd2 <spi_write>
+ 178:	80 e0       	ldi	r24, 0x00	; 0
+  	  	spi_slaveDeSelect(0);		// Deselect display chip
+ 17a:	bb df       	rcall	.-138    	; 0xf2 <spi_slaveDeSelect>
+ 17c:	cf 5f       	subi	r28, 0xFF	; 255
+	DDRB=0x01;					  	// Set PB0 pin as output for display select
+	spi_masterInit();              	// Initialize spi module
+	displayDriverInit();            // Initialize display chip
+
+ 	// clear display (all zero's)
+	for (char i =1; i<=4; i++)
+ 17e:	c5 30       	cpi	r28, 0x05	; 5
+ 180:	a8 f3       	brcs	.-22     	; 0x16c <main+0xe>
+ 182:	88 ee       	ldi	r24, 0xE8	; 232
+      	spi_slaveSelect(0); 		// Select display chip
+      	spi_write(i);  				// 	digit adress: (digit place)
+      	spi_write(0);				// 	digit value: 0 
+  	  	spi_slaveDeSelect(0);		// Deselect display chip
+	}    
+	wait(1000);
+ 184:	93 e0       	ldi	r25, 0x03	; 3
+ 186:	8b df       	rcall	.-234    	; 0x9e <wait>
+
+	// write 4-digit data  
+ 	for (char i =1; i<=4; i++)
+ 188:	c1 e0       	ldi	r28, 0x01	; 1
+  	{
+		spi_slaveSelect(0);         // Select display chip
+ 18a:	0c c0       	rjmp	.+24     	; 0x1a4 <main+0x46>
+ 18c:	80 e0       	ldi	r24, 0x00	; 0
+		spi_write(i);         		// 	digit adress: (digit place)
+ 18e:	a5 df       	rcall	.-182    	; 0xda <spi_slaveSelect>
+ 190:	8c 2f       	mov	r24, r28
+		spi_write(i);  		// 	digit value: i (= digit place)
+ 192:	9f df       	rcall	.-194    	; 0xd2 <spi_write>
+ 194:	8c 2f       	mov	r24, r28
+ 196:	9d df       	rcall	.-198    	; 0xd2 <spi_write>
+		spi_slaveDeSelect(0); 		// Deselect display chip
+ 198:	80 e0       	ldi	r24, 0x00	; 0
+ 19a:	ab df       	rcall	.-170    	; 0xf2 <spi_slaveDeSelect>
+	
+		wait(1000);
+ 19c:	88 ee       	ldi	r24, 0xE8	; 232
+ 19e:	93 e0       	ldi	r25, 0x03	; 3
+ 1a0:	7e df       	rcall	.-260    	; 0x9e <wait>
+ 1a2:	cf 5f       	subi	r28, 0xFF	; 255
+  	  	spi_slaveDeSelect(0);		// Deselect display chip
+	}    
+	wait(1000);
+
+	// write 4-digit data  
+ 	for (char i =1; i<=4; i++)
+ 1a4:	c5 30       	cpi	r28, 0x05	; 5
+ 1a6:	90 f3       	brcs	.-28     	; 0x18c <main+0x2e>
+ 1a8:	88 ee       	ldi	r24, 0xE8	; 232
+		spi_write(i);  		// 	digit value: i (= digit place)
+		spi_slaveDeSelect(0); 		// Deselect display chip
+	
+		wait(1000);
+  	}
+	wait(1000);
+ 1aa:	93 e0       	ldi	r25, 0x03	; 3
+ 1ac:	78 df       	rcall	.-272    	; 0x9e <wait>
+ 1ae:	81 e0       	ldi	r24, 0x01	; 1
+ 1b0:	90 e0       	ldi	r25, 0x00	; 0
+
+
+
+  	return (1);
+ 1b2:	cf 91       	pop	r28
+ 1b4:	08 95       	ret
+
+000001b6 <_exit>:
+ 1b6:	f8 94       	cli
+
+000001b8 <__stop_program>:
+ 1b8:	ff cf       	rjmp	.-2      	; 0x1b8 <__stop_program>
