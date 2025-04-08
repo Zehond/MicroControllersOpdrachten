@@ -95,7 +95,7 @@ void init_timer1() {
 	OCR1A = 19530; // 2 second delay time
 	
 	// Value B compare register
-	OCR1B = 78120; // 8 second delay time
+	OCR1B = 78124; // 8 second delay time
 	
 	// Enable interrupts for Timer1
 	TIMSK |= (1 << OCIE1A) | (1 << OCIE1B); // Enable interrupt for compare match A and compare match B
