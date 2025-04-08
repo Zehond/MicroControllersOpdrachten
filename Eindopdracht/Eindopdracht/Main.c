@@ -106,7 +106,7 @@ ISR(TIMER1_COMPA_vect) {
 	lastGottenData = gottenData; // Keep track of last data
 	gottenData = DHT11_get_data(); // Get temperature and Humidity
 	
-	//gottenData.temperature = -21; // Example to show negative temperatures
+	//gottenData.temperature = -gottenData.temperature; // Example to show negative temperatures
 	
 	if (gottenData.temperature < 0) { // Mark number as negative if below 0
 		isNegative = true;
