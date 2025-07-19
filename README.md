@@ -38,7 +38,6 @@ For the [final assignment](https://github.com/Zehond/MicroControllersOpdrachten/
 We also made use of:
 - Built in piezo buzzer.
 - DHT11 sensor.
-<br>
 
 <!-- Creation -->
 ## Creation
