@@ -22,7 +22,7 @@ ___
 <!-- Divider -->
 ___
 <!-- Badges -->
-[![GitHub Release](https://img.shields.io/github/v/release/Zehond/MicroControllersOpdrachten?style=for-the-badge&labelColor=%23000000)](https://github.com/Zehond/MicroControllersOpdrachten/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/Zehond/MicroControllersOpdrachten?style=for-the-badge&color=%23006400)](https://github.com/Zehond/MicroControllersOpdrachten/releases)
 
 <!-- About This Repository -->
 # About This Repository
